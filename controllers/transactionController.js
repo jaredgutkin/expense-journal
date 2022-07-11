@@ -21,7 +21,7 @@ const addTransaction = asyncHandler(async (req, res) => {
         throw new Error('Please add a text field') 
     }
 
-    if (!req.body.amountt){
+    if (!req.body.amount){
         res.status(400)
         throw new Error('Please add an amount') 
     }
